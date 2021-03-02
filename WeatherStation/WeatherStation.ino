@@ -290,7 +290,7 @@ void showWind(void)
   centerText(msg, 16);
 
   display.setFont(ArialMT_Plain_24);
-  sprintf(msg, "%d.%d MPH", s / 10, s% 10); 
+  sprintf(msg, "%d.%d m/s", s / 10, s% 10); 
   centerText(msg, 32);
 } //  showWind
 
@@ -955,7 +955,7 @@ void handleClient(void)
     client.print("<TD colspan=\"3\" align=\"center\">Wind from the ");
     client.print(windDirToStr());
     sensor = (int)(WindSpeed * 10.0);
-    sprintf(msg, " at %d.%d MPH</TD>", sensor / 10, sensor % 10);
+    sprintf(msg, " at %d.%d m/s</TD>", sensor / 10, sensor % 10);
     client.print(msg);
  
     // third row
