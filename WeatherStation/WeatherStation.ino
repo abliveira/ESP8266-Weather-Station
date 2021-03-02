@@ -931,7 +931,7 @@ void handleClient(void)
     client.print(msg);
     
     sensor = (int)(humidity * 10.0);
-    sprintf(msg, "<TD align=\"center\">%d.%d \%</TD>", sensor / 10, sensor % 10);
+    sprintf(msg, "<TD align=\"center\">%d.%d %%</TD>", sensor / 10, sensor % 10);
     client.print(msg);
 
     sensor = (int)(pressure * 10.0);
@@ -972,7 +972,7 @@ void handleClient(void)
     client.print(msg);
     
     sensor = (int)(OutHumidity * 10.0);
-    sprintf(msg, "<TD align=\"center\">%d.%d \%</TD>", sensor / 10, sensor % 10);
+    sprintf(msg, "<TD align=\"center\">%d.%d %%</TD>", sensor / 10, sensor % 10);
     client.print(msg);
 
     sensor = (int)(OutPressure * 10.0);
