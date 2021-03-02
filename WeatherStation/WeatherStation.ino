@@ -344,7 +344,7 @@ void showHumidity(char *s, double humid)
   centerText("Humidity", 16);
 
   display.setFont(ArialMT_Plain_24);
-  sprintf(msg, "%3d.%d \%", h / 10, h % 10);
+  sprintf(msg, "%3d.%d %%", h / 10, h % 10);
   centerText(msg, 32);
 } //  showHumidity
 
